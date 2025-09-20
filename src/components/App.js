@@ -24,7 +24,7 @@ const App = () => {
     <div>
         {data.map((item) => (
         <div key={item.id} style={{border: "1px solid #ccc", margin: "10px", padding: "10px"}}>
-          <h2>{item.title}</h2>
+          <h2>{index + 1}. {item.title}</h2>
           <p>{item.body}</p>
         </div>
       ))}
