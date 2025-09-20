@@ -18,11 +18,11 @@ const App = () => {
     };
 
     fetchData();
-  }, [])
+  }, []);
 
   return (
     <div>
-        {data.map((item) => (
+        {data.map((item, index) => (
         <div key={item.id} style={{border: "1px solid #ccc", margin: "10px", padding: "10px"}}>
           <h2>{index + 1}. {item.title}</h2>
           <p>{item.body}</p>
